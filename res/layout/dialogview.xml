@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroudwood" >
+
+        <ImageView
+            android:id="@+id/winLostV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ok" />
+
+        <TextView
+            android:id="@+id/winLostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/winLostV"
+            android:text="You won"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/winLostEnterTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winLostV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Please enter your name"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/winLostEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winLostEnterTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winLostEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Again" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button1"
+                android:text="Leave Game" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/numberWasTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/winLostTV"
+            android:layout_below="@id/winLostTV"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>

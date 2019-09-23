@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/nameHtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Name : Yassine"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/levelHtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameHtv"
+            android:text="Level : hard" />
+
+        <TextView
+            android:id="@+id/scoreHtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelHtv"
+            android:text="Attempts: 3/7" />
+
+        <TextView
+            android:id="@+id/timerHtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreHtv"
+            android:text="0 : 31 s" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/smileHV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ok" />
+
+    <TextView
+        android:id="@+id/timeClockHtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/smileHV"
+        android:layout_below="@id/smileHV"
+        android:text="17 : 45" />
+
+    <TextView
+        android:id="@+id/dateHtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/timeClockHtv"
+        android:layout_below="@id/timeClockHtv"
+        android:text="11 / 08 / 2012" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutRootS"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backoptions" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/backSV"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:src="@drawable/buttonback" />
+
+        <ImageView
+            android:id="@+id/aboutSV"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:src="@drawable/buttonabout2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayoutTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:id="@+id/howtouseV"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/buttonhowto" />
+
+        <ImageView
+            android:id="@+id/historyV"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/howtouseV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/buttonstatistics" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayoutTop"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp" >
+
+        <ImageView
+            android:id="@+id/LevelsV"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/buttonlevel" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LevelsV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:text="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+

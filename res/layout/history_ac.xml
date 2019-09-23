@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutRootH"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backstatistics" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutHistorybar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/backHV"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:src="@drawable/buttonback" />
+
+        <ImageView
+            android:id="@+id/aboutHV"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:src="@drawable/buttonclear" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/RelativeLayoutBottom"
+        android:layout_below="@id/RelativeLayoutHistorybar"
+        android:layout_marginTop="25dp" >
+
+    </ListView>
+
+    </RelativeLayout>
+

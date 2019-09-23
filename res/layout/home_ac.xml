@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backapplication" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/soundV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:clickable="true"
+            android:src="@drawable/sound" />
+
+        <ImageView
+            android:id="@+id/musicV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/soundV"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_toRightOf="@+id/soundV"
+            android:clickable="true"
+            android:src="@drawable/music" />
+
+        <ImageView
+            android:id="@+id/aboutV"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:clickable="true"
+            android:src="@drawable/buttonabout" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/gplusV"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:clickable="true"
+            android:src="@drawable/gplus" />
+
+        <ImageView
+            android:id="@+id/facebookV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_toLeftOf="@+id/gplusV"
+            android:clickable="true"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/twitterV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_toLeftOf="@+id/facebookV"
+            android:clickable="true"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/exitV"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/gplusV"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:clickable="true"
+            android:src="@drawable/buttonexit" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/SettingsV"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/RelativeLayoutBottom"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/options" />
+
+    <ImageView
+        android:id="@+id/playV"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/SettingsV"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/play" />
+
+</RelativeLayout>
