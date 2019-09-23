@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maroclance.guessnumber"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/iconguessnumber"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home_ac" 
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+<!--            just added  -->
+<!--                     <data android:mimeType="text/plain" /> <meta-data/> -->
+<!--            just added  -->
+           
+           </intent-filter>
+            
+
+            
+        </activity>
+        <activity android:name="PlayActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:name="SettingsActivity"></activity>
+        <activity android:name="HistoryActivity"
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
